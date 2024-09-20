@@ -16,14 +16,14 @@ const News = () => {
 
   useEffect(() => {
     dispatch(getNews());
-  }, []);
+  });
 
   return (
     <>
       <h1>NEWS</h1>
 
       {loading && <img src={loadingGif} alt="gif" />}
-      
+
       <Box
         xs={{ d: "flex" }}
         display="flex"
